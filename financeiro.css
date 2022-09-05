@@ -1,0 +1,45 @@
+body{
+    background-color: white;
+    
+}
+.corpo{
+
+    background-color: #79addc;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2%;
+    width: 25%;
+    height: 45%;
+    text-align: centers;
+    margin-top: 10%;
+    justify-content: center;
+
+}
+.espaco{
+    margin-top: 15%;
+}
+
+.informacoes{
+    background-color: #79addc;
+    border: 2px solid black;
+    border-radius: 1%;
+    width: 30%;
+    height: 50%;
+    text-align: left;
+    margin-top: 10%;
+    float: left;
+    display: inline;
+    padding: 2%;
+}
+
+.txto2{
+    background-color: #79addc;
+    border: 2px solid black;
+    border-radius: 1%;
+    width: 30%;
+    height: 60%;
+    text-align: left;
+    margin-top: 10%;
+    float: right;
+    display: inline;
+    padding: 2%;
+}

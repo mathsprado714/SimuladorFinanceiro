@@ -1,0 +1,61 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="financeiro.css">
+    <title>simulador Finabceiro</title>
+</head>
+<body>
+<div class="informacoes">
+    <p class="texto1s">
+        Menos de 20% dos recem nascidos tem um parto normal, o que acaba fazendo com que +- 80% dos bebes ficam
+        no hospital durante mais tempo que o esperado no pós-parto, o tempo acaba variando dependendo da gravidade
+        do problema do bebe, causando despesas a mais que o esperado. Entretanto, manter o RN aquecido após o 
+        nascimento continua a ser um problema frequente nos serviços de neonatologiaem todo o mundo.
+        Estudo realizado por Almeida et al.,8 daRede Brasileira de Pesquisas Neonatais, observou hipotermia
+        em 44% dos RN com idade gestacional entre 23 e 33 semanas na sala de parto e em 51% na admissão na UTIN
+    </p>
+
+</div>
+<div class="txto2">
+    <h1><B>Gastos Médicos</B></h1>
+    <p>
+        <li>| obstetra - média horária: R$42,80, Mensal: R$10,272, 40~60 dias: R$13,696~20,544</li><br>
+        <li>| anestesista - média horária: R$42,80, Mensal: R$10,272, 40~60 dias: R$13,696~20,544</li><br>
+        <li>| pediatra - média horária: R$42,80, Mensal: R$10,272, 40~60 dias: R$13,696~20,544</li><br>
+        <li>| enfermeira obstetra - média horária: R$34,00, Mensal: R$08,160, 40~60 dias: R$10,880~16,320</li><br>
+        <li>| tecnica de enfermagem - média horária: R$25,90, Mensal: R$06,216, 40~60 dias: R$08,288~12,432</li><br>
+    </p>
+</div>
+<center>
+    <div class="corpo">
+        <div class="espaco">
+            <h1 class="titulo"><b>Simulador Financeiro</b></h1>
+            Quantos dias o bebê ficará internado: <br> <input type="text" id="in_tempo"><br>
+            Nome: <br> <input type="text" id="in_nome"><br><br>
+            <button onclick="cuidado()">CALCULE!</button>
+            <div id="div_mensagem"></div>
+        </div>
+    </div>
+</center>
+
+
+</body>
+</html>
+
+<script>
+
+    function cuidado(){
+        //342.4 | 272 | 207.2 = 821,6
+        var nome = in_nome.value
+        var tempo = Number(in_tempo.value)
+        var gasto = 821.6 * tempo
+
+        div_mensagem.innerHTML = `${nome} vai acabar gastando R$${gasto.toFixed(2)} esse valor <br>
+        caso não façam o controle de umidade e temperatura, acarretando em outras problemas.`
+    }
+
+
+
+</script>
